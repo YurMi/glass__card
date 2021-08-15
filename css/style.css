@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+body {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  min-height: 100vh;
+  background-color: #666;
+}
+
+.body__content {
+  position: relative;
+}
+
+.card__bg {
+  position: relative;
+  width: 16.5em;
+  height: 22.5rem;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.card__bg span {
+  position: absolute;
+  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+.c1 {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 255, 0.616);
+}
+
+.c2 {
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 99, 71, 0.61);
+}
+
+.c3 {
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 0, 0.616);
+}
+
+.c4 {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.616);
+}
+
+.card__glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 17rem;
+  height: 23rem;
+  border-radius: 5px;
+}
+
+.info__glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.info__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #fff;
+  padding: 10px;
+}
+
+.info__glass::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(238, 1, 1, 0.1);
+}
+
+.info__glass--title {
+  font-size: 24px;
+  line-height: 141.66667%;
+}
+
+.info__glass--age {
+  font-size: 18px;
+}
